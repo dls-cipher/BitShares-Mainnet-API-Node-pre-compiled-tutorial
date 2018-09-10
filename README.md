@@ -1,4 +1,4 @@
-# BitShares 'pre-compiled-witness_node'
+# BitShares 'pre-compiled-witness_node' [Ubuntu 16.04 x64]
 2 bash scripts that include weekly updated fully synced BitShares node deployed with nginx and socket/ssl config
 
 ## Description
