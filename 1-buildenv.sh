@@ -12,6 +12,7 @@ apt-get update && apt-get install gcc-4.9 g++-4.9 cmake make \
                      g++ libbz2-dev libicu-dev python-dev screen -y
                      
 apt-get install joe htop
+
 apt-get install unzip
 
 #Building Swap and Structure
