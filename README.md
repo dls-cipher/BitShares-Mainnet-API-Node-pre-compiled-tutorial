@@ -43,6 +43,7 @@ chmod a+x 1-buildenv.sh
 wget https://raw.githubusercontent.com/dls-cipher/pre-compiled-witness_node/master/2-deploy.sh
 chmod a+x 2-deploy.sh
 ./2-deploy.sh
+#comment: run last command above through SCREEN so you dont lose remote session - e.g. screen -dmS build ./2-deploy.sh
 ```
 
 *This will take some time. Usually it takes around 10-12 minutes to download node with blockchain database not older than 1 week. After successful download, untar can possibly make your screen/ssh session look frozen for about 20-30 mins. Be patient, please.*
