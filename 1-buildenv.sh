@@ -8,10 +8,11 @@ apt-get update && apt-get install gcc-4.9 g++-4.9 cmake make \
                      libssl-dev openssl libreadline-dev \
                      autoconf libtool git libcurl4-openssl-dev \
                      autotools-dev automake build-essential \
-					 doxygen libboost-all-dev automake nginx \
+		     doxygen libboost-all-dev automake nginx \
                      g++ libbz2-dev libicu-dev python-dev screen -y
                      
-apt-get install joe htop unzip
+apt-get install joe htop
+apt-get install unzip
 
 #Building Swap and Structure
 
