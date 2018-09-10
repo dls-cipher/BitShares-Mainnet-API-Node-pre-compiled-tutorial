@@ -65,7 +65,7 @@ with your own set of SSL cert/key, and their replacements edit within nginx conf
 **Be logged in as root or use sudo command**
 
 ```
-wget https://github.com/dls-cipher/pre-compiled-witness_node/blob/master/2-deploynonginx.sh
+wget https://raw.githubusercontent.com/dls-cipher/pre-compiled-witness_node/master/2-deploynonginx.sh
 chmod a+x 2-deploynonginx.sh
 ./2-deploynonginx.sh
 ```
