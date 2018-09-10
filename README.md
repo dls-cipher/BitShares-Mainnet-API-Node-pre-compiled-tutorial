@@ -47,6 +47,18 @@ chmod a+x 2-deploy.sh
 
 *This will take some time. Usually it takes around 10-12 minutes to download node with blockchain database not older than 1 week. After successful download, untar can possibly make your screen/ssh session look frozen for about 20-30 mins. Be patient, please.*
 
+Replace:
+
+```
+/etc/nginx/ssl/ssl-bundle.crt
+/etc/nginx/ssl/apasia3rd.key
+```
+
+with your own set of SSL cert/key, and their replacements edit within nginx configuration:
+
+```
+/etc/nginx/sites-available/bitshares
+```
 
 ### 2.2 - WGET/Deploy pre-compiled witness_node (NO nginx/websocket/ssl configuration)
 
