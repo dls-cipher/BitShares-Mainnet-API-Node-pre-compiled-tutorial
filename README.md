@@ -28,7 +28,7 @@
 **Be logged in as root or use sudo command**
 
 ```
-wget https://github.com/dls-cipher/pre-compiled-witness_node/blob/master/1-buildenv.sh
+wget https://raw.githubusercontent.com/dls-cipher/pre-compiled-witness_node/master/1-buildenv.sh
 chmod a+x 1-buildenv.sh
 ./1-buildenv.sh
 ```
@@ -40,7 +40,7 @@ chmod a+x 1-buildenv.sh
 **Be logged in as root or use sudo command**
 
 ```
-wget https://github.com/dls-cipher/pre-compiled-witness_node/blob/master/2-deploy.sh
+wget https://raw.githubusercontent.com/dls-cipher/pre-compiled-witness_node/master/2-deploy.sh
 chmod a+x 2-deploy.sh
 ./2-deploy.sh
 ```
