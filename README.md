@@ -3,7 +3,9 @@
 
 ## Description
 
-- These bash scripts will install/deploy everything needed for *Ubuntu 16.04* to run **BitShares Public API node**, as per clone provisioned and weekly backed up from [Status200 BitShares Node](https://status200.bitshares.apasia.tech) - Currently listed in [BitShares DEX](https://wallet.bitshares.org) and used by [BitShares DEXBot](
+- These bash scripts will install/deploy everything needed for *Ubuntu 16.04* to run **BitShares Public API node**, as per clone provisioned and weekly backed up from [Status200 BitShares Node](https://status200.bitshares.apasia.tech) - Currently listed in [BitShares DEX](https://wallet.bitshares.org) and used by [BitShares DEXBot](https://github.com/Codaone/DEXBot/)
+
+- endpoints p2p is utilizing 1776, and rpc is utilizing 8090.
 
 - [optional - see 2.1 and 2.2] nginx installation and configuration to run websocket on 8090 and ssl example deployed with your default server $hostname (whatever is /etc/hostname content)
 *warning:(you will have to replace cert and key with your own and edit '/etc/nginx/sites-available/bitshares')*
