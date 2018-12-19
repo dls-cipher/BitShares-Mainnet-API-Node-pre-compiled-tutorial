@@ -1,9 +1,17 @@
 # BitShares Mainnet API 'pre-compiled-witness_node' [Ubuntu 16.04 x64]
 2 bash scripts that deploys pre-compiled BitShares API node fully synced (optional: /w nginx/websocket/ssl config)
 
+## Minimum server requirements:
+CPU: 2 (v)Core
+RAM: 8GB RAM
+HDD: 100GB SSD Higher IOPS drive
+Bandwidth: Minimum 100Mbit/s | Recommended +1Gbit/s (both up and down)
+
+**Notice:**  This configuration will support only default Node (max-ops 100). For running full api node in BitShares you will need dedicated instance with 64GB RAM minimum and 2x 200GB SSD drive in raid mirror for best performance and utilization of it.
+
 ## Description
 
-- These bash scripts will install/deploy everything needed for *Ubuntu 16.04* to run **BitShares Public API node**, as per clone provisioned and weekly backed up from [Status200 BitShares Node](https://status200.bitshares.apasia.tech) - Currently listed in [BitShares DEX](https://wallet.bitshares.org) and used by [BitShares DEXBot](https://github.com/Codaone/DEXBot/)
+- These bash scripts will install/deploy everything needed for *Ubuntu 16.04* to run **BitShares Public API node**, as per clone provisioned and weekly backed up from [Status200 BitShares Node](https://status200.bitshares.apasia.tech) - Currently listed in [BitShares DEX](https://wallet.bitshares.org), maintained through official [Worker](https://www.bitshares.foundation/workers/2018-08-flash-global-infrastructure) and used by [BitShares DEXBot](https://github.com/Codaone/DEXBot/)
 
 - endpoints p2p is utilizing 1776, and rpc is utilizing 8090.
 
