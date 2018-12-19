@@ -2,10 +2,16 @@
 Bash scripts that deploys pre-compiled BitShares API node pre-synced/replayed (optional: NGINX + SSL certs example)
 
 ## Minimum server requirements:
+
+<hr>
 CPU: 2 (v)Core
+<hr>
 RAM: 8GB RAM
+<hr>
 HDD: 100GB SSD Higher IOPS drive
+<hr>
 Bandwidth: Minimum 100Mbit/s | Recommended +1Gbit/s (both up and down)
+<hr>
 
 **Notice:**  This configuration will support only default Node (max-ops 100). For running full api node in BitShares you will need dedicated instance with 64GB RAM minimum and 2x 200GB SSD drive in raid mirror for best performance and utilization of it.
 
