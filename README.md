@@ -1,4 +1,4 @@
-# BitShares 'pre-compiled-witness_node' [Ubuntu 16.04 x64]
+# BitShares Mainnet API 'pre-compiled-witness_node' [Ubuntu 16.04 x64]
 2 bash scripts that deploys pre-compiled BitShares API node fully synced (optional: /w nginx/websocket/ssl config)
 
 ## Description
