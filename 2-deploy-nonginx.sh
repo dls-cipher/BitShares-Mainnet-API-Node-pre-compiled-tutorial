@@ -1,7 +1,7 @@
 #!/bin/bash
 now=$(date +"%T")
 
-#Download full blockchain from master node with max-ops 100 database running port 666
+#Download full blockchain from master node with max-ops 100 database running port 8090
 
 cd /bitshares/
 wget https://status200.bitshares.apasia.tech/downloads/bts-node-full.tar.gz | sed 's/\r//g'
