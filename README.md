@@ -9,7 +9,7 @@ HDD: 100GB SSD Higher IOPS drive
 Bandwidth: Minimum 100Mbit/s | Recommended +1Gbit/s (both up and down)
 
 
-**Notice:**  This configuration will support only default Node (max-ops 100). For running full api node in BitShares you will need dedicated instance with 64GB RAM minimum and 2x 200GB SSD drive in raid mirror for best performance and utilization of it.
+**Notice:**  This configuration will support only default Node (max-ops 100). For running full api node in BitShares you will need dedicated instance with 64GB RAM minimum and 2x 640GB SSD drive in raid mirror for best performance and utilization of it.
 
 ## Description
 
