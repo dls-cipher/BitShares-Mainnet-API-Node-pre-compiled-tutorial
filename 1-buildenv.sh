@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR=/
 
-#Preparing Ubuntu 16.04 environment
+#Preparing Ubuntu 18.10 environment
 
 apt-get update && apt-get install gcc-5 g++-5 cmake make \
                      libbz2-dev libdb++-dev libdb-dev \
@@ -19,7 +19,7 @@ apt-get install unzip
 
 mkdir /bitshares
 
-fallocate -l 30G /swap
+fallocate -l 10G /swap #Asuming you are having minimum 8GB of real RAM
 chmod 0600 /swap
 mkswap /swap
 if output=$(swapon /swap); then
