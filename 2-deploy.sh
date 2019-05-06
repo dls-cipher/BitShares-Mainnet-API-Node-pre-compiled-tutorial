@@ -4,11 +4,11 @@ now=$(date +"%T")
 #Download full blockchain from master node with max-ops 100 database running port 8090
 
 cd /bitshares/
-wget https://toronto.ca.api.bitshares.org/downloads/bts-node-full.tar.gz | sed 's/\r//g'
-if output=$(tar zxvf bts-node-full.tar.gz); then
+wget https://toronto.ca.api.bitshares.org/downloads/bts-full-node.tar.gz | sed 's/\r//g'
+if output=$(tar zxvf bts-full-node.tar.gz); then
     printf 'TAR Extract done'
 fi
-rm -rf bts-node-full.tar.gz
+rm -rf bts-full-node.tar.gz
 
 echo "Downloaded and deployed successfully $now" | tee -a /bitshares/install
 
