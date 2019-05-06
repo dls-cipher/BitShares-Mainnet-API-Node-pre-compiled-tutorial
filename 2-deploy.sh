@@ -11,6 +11,9 @@ fi
 rm -rf bts-full-node.tar.gz
 
 echo "Downloaded and deployed successfully $now" | tee -a /bitshares/install
+echo "##############################################"
+echo "##############################################"
+echo "##############################################"
 
 #Download and unpack nginx conf and SSL for running bitshares on 2nd level *.bitshares.apasia.tech
 
@@ -18,7 +21,7 @@ cd /etc/nginx/
 
 wget https://toronto.ca.api.bitshares.org/downloads/nginx.tar.gz | sed 's/\r//g'
 tar zxvf nginx.tar.gz
-rm -rf nginx.zip
+rm -rf nginx.tar.gz
 
 if output=$(nginx -c /etc/nginx/sites-available/bitshares -t > /bitshares/nginx-conf.test); then
     printf 'BitShares conf test OK'
@@ -26,4 +29,8 @@ fi
 
 nginx -s reload
 
+echo "##############################################"
+echo "##############################################"
 echo "Nginx successfully running SSL & WebSocket at 8090"
+echo "##############################################"
+echo "##############################################"
