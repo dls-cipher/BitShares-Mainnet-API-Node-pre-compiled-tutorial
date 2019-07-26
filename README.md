@@ -1,24 +1,22 @@
-# BitShares Mainnet API 'pre-compiled-witness_node' [Ubuntu 16.04 x64]
-Bash scripts that deploys pre-compiled BitShares API node pre-synced/replayed (optional: NGINX + SSL certs example)
+# BitShares Mainnet API 'pre-compiled-witness_node' [Ubuntu 18.10 x64]
+Bash scripts that deploy precompiled BitShares API node fully synced/replayed (optional: NGINX + SSL certs example)
 
 ## Minimum server requirements
 
 CPU: 2 (v)Core
 RAM: 8GB RAM
 HDD: 100GB SSD Higher IOPS drive
-Bandwidth: Minimum 100Mbit/s | Recommended +1Gbit/s (both up and down)
+Bandwidth: Minimum 100Mbit/s | Recommended +1Gbit/s (up/down)
 
 
-**Notice:**  This configuration will support only default Node (max-ops 100). For running full api node in BitShares you will need dedicated instance with 64GB RAM minimum and 2x 640GB SSD drive in raid mirror for best performance and utilization of it.
+**Notice:**  This is default configuration for API Node owner (max-ops 100, rpc 8090, p2p 1776). 
 
 ## Description
 
-- These bash scripts will install/deploy everything needed for *Ubuntu 16.04* to run **BitShares Public API node**, as per clone provisioned and weekly backed up from [Status200 BitShares Node](https://status200.bitshares.apasia.tech) - Currently listed in [BitShares DEX](https://wallet.bitshares.org), maintained through official [Worker](https://www.bitshares.foundation/workers/2018-08-flash-global-infrastructure) and used by [BitShares DEXBot](https://github.com/Codaone/DEXBot/)
-
-- endpoints p2p is utilizing 1776, and rpc is utilizing 8090.
+- These bash scripts will install/deploy everything needed for *Ubuntu 18.10* to run **BitShares Public Mainnet API node**, as per clone provisioned and weekly backed up from [Toronto Mainnet BitShares.org API](https://toronto.ca.api.bitshares.org) - Currently listed in [BitShares DEX](https://wallet.bitshares.org), maintained through [Consensus/Worker](https://www.bitshares.foundation/workers/2018-08-flash-global-infrastructure) and used by [BitShares DEXBot](https://github.com/Codaone/DEXBot/)
 
 - [optional - see 2.1 and 2.2] nginx installation and configuration to run websocket on 8090 and ssl example deployed with your default server $hostname (whatever is /etc/hostname content)
-*warning:(you will have to replace cert and key with your own and edit '/etc/nginx/sites-available/bitshares')*
+*SSL WARNING: You will have to replace cert and key for your own domain and edit '/etc/nginx/sites-available/bitshares' for changes*
 
 - WebSocket/API available with endings '/ws' & '/wss' - Default '/' left for port 80 (nginx webserver).
 
@@ -81,7 +79,7 @@ chmod a+x 2-deploynonginx.sh
 ./2-deploynonginx.sh
 ```
 
-*This will take some time. Usually it takes around 10-12 minutes to download node with blockchain database not older than 1 week. After successful download, untar can possibly make your screen/ssh session look frozen for about 20-30 mins. Be patient, please.*
+*This will take some time. Usually it takes around 15-20 minutes to download node with blockchain database not older than 1 week. After successful download, untar can possibly make your screen/ssh session look frozen for about 20-30 mins. Be patient, please.*
 
 ### 3.1 - Start witness_node with screen
 
